@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="p-3">
+    <div class="container-fluid">
+        <ul class="nav nav-pills ">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <form class="row g-3 needs-validation " novalidate id="formPrin">
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Date</label>
+                <input type="date" class="form-control" id="validationCustom01" required>
+                <div class="invalid-feedback">
+                    please enter the date!
+                </div>
+                <div class="valid-feedback">
+                    Perfect!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Service</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="invalid-feedback">
+                    please choose the relevant service!
+                </div>
+                <div class="valid-feedback">
+                    Perfect!
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Demandant(e)</label>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    please enter a name!
+                </div>
+                <div class="valid-feedback">
+                    Perfect!
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Responsable</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option value="Ouedraogo Eddy Fawzi">Ouedraogo Eddy Fawzi</option>
+                    <option value="LankoandeYenouboa Urbain">LankoandeYenouboa Urbain</option>
+                  </select>
+                <div class="invalid-feedback">
+                    please choose a task leader!
+                </div>
+                <div class="valid-feedback">
+                    Perfect!
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">Description de la tache</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="invalid-feedback">
+                    please enter task description!
+                </div>
+                <div class="valid-feedback">
+                    Perfect!
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input alert-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="terminer">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      tache Terminer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input alert-info" type="radio" name="flexRadioDefault" value="instance" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      tâche en instance
+                    </label>
+                </div>
+
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="scri.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
